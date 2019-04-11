@@ -4,19 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
+    "test:watch": "mocha --recursive -w",
     "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
     "nodemon": "^1.18.10"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "mocha": "^6.1.2",
     "moment": "^2.24.0",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "supertest": "^4.0.2"
   }
 }
